@@ -13,6 +13,26 @@
 <table id="issuestable" class="display" cellspacing="0" width="100%">
 
 <thead><tr><th>Modified</th><th>Module</th><th>Subject</th><th>Author</th></thead>
+<tr><td>2014-11-21</td><td>blink</td><td><a href='https://codereview.chromium.org/737333002'>Ignore pos argument if the first render object is not the current one.</a></td><td>zherczeg.u-szeged</td></tr>
+<tr><td>2014-11-21</td><td>blink</td><td><a href='https://codereview.chromium.org/745503002'>Replace Dictionary with PositionOptions in geolocation/.</a></td><td>jinho.bang</td></tr>
+<tr><td>2014-11-20</td><td>blink</td><td><a href='https://codereview.chromium.org/688933002'>Make textContent trigger single DOMSubtreeModified event</a></td><td>rob.buis</td></tr>
+<tr><td>2014-11-20</td><td>blink</td><td><a href='https://codereview.chromium.org/685623005'>Add missing reset calls after continue in layoutRunsAndFloatsInRange().</a></td><td>zherczeg.u-szeged</td></tr>
+<tr><td>2014-11-20</td><td>blink</td><td><a href='https://codereview.chromium.org/724733002'>Support for [Clamp] and [EnforceRange] to IDL dictionary.</a></td><td>jinho.bang</td></tr>
+<tr><td>2014-11-20</td><td>blink</td><td><a href='https://codereview.chromium.org/725913003'>Fix stroke color definition of canvas context.</a></td><td>rhodovan.u-szeged</td></tr>
+<tr><td>2014-11-20</td><td>blink</td><td><a href='https://codereview.chromium.org/736943002'>Support aria-grabbed attribute.</a></td><td>je_julie.kim</td></tr>
+<tr><td>2014-11-19</td><td>blink</td><td><a href='https://codereview.chromium.org/718403002'>Input type number should return Spinbuttonrole from blink.</a></td><td>shreeram.k</td></tr>
+<tr><td>2014-11-19</td><td>blink</td><td><a href='https://codereview.chromium.org/690593002'>Remove deprecated updateBackingStoreAndCheckValidity from WebAXObject</a></td><td>kkosztyo.u-szeged</td></tr>
+<tr><td>2014-11-19</td><td>blink</td><td><a href='https://codereview.chromium.org/698023005'>Move the v8::Isolate* parameter to the first parameter of various binding methods in third_party/WebKit/Source/bindings</a></td><td>r.nagaraj</td></tr>
+<tr><td>2014-11-19</td><td>blink</td><td><a href='https://codereview.chromium.org/732333004'>Remove an unneeded platform check in lint_test_expectations.py</a></td><td>zsborbely.u-szeged</td></tr>
+<tr><td>2014-11-19</td><td>blink</td><td><a href='https://codereview.chromium.org/722143002'>Labels with user-select: none should pass events to control element</a></td><td>deepak.sa</td></tr>
+<tr><td>2014-11-18</td><td>blink</td><td><a href='https://codereview.chromium.org/729343003'>Handle AX help-Text for media time slider.</a></td><td>je_julie.kim</td></tr>
+<tr><td>2014-11-18</td><td>blink</td><td><a href='https://codereview.chromium.org/727283002'>Custom Elements in template should not be upgraded</a></td><td>deepak.sa</td></tr>
+<tr><td>2014-11-18</td><td>blink</td><td><a href='https://codereview.chromium.org/731833002'>Using sequence<KeyUsage> in WebCrypto IDL files rather than KeyUsage[]</a></td><td>paritosh.in</td></tr>
+<tr><td>2014-11-18</td><td>blink</td><td><a href='https://codereview.chromium.org/734203002'>Remove unused code.</a></td><td>c.shu</td></tr>
+<tr><td>2014-11-17</td><td>blink</td><td><a href='https://codereview.chromium.org/699703002'>Clean up virtual function in Source/html</a></td><td>zhaoze.zhou</td></tr>
+<tr><td>2014-11-17</td><td>blink</td><td><a href='https://codereview.chromium.org/723123002'>Default orientation for aria scrollbars should be vertical</a></td><td>k.czech</td></tr>
+<tr><td>2014-11-15</td><td>blink</td><td><a href='https://codereview.chromium.org/732803003'>Clean up forward declarations in Source/core</a></td><td>zhaoze.zhou</td></tr>
+<tr><td>2014-11-14</td><td>blink</td><td><a href='https://codereview.chromium.org/708283002'>RLSA needsLayout on CustomScrollbar thickness change.</a></td><td>sataya.m</td></tr>
 <tr><td>2014-11-14</td><td>blink</td><td><a href='https://codereview.chromium.org/723943002'>Remove EncodingAPI runtime flag(status=stable)</a></td><td>anujk.sharma</td></tr>
 <tr><td>2014-11-14</td><td>blink</td><td><a href='https://codereview.chromium.org/720203002'>Rename HACK_FORCE_TEXT_AUTOSIZING_ON_DESKTOP</a></td><td>zhaoze.zhou</td></tr>
 <tr><td>2014-11-13</td><td>blink</td><td><a href='https://codereview.chromium.org/591053002'>Support print preset options for pdf document</a></td><td>n.bansal</td></tr>
@@ -2584,6 +2604,33 @@
 <tr><td>2013-04-19</td><td>blink</td><td><a href='https://codereview.chromium.org/13886014'>Remove FeatureDefines.h as it was designed to deal with the variety of build systems for WebKit.</a></td><td>l.gombos</td></tr>
 <tr><td>2013-04-18</td><td>blink</td><td><a href='https://codereview.chromium.org/14244017'>Make length property return useful values for DOM bindings functions</a></td><td>ch.dumez</td></tr>
 <tr><td>2013-04-18</td><td>blink</td><td><a href='https://codereview.chromium.org/14046036'>Remove the remainings of the ENABLE_XSLT compile-time flag, following rev 148369.</a></td><td>l.gombos</td></tr>
+<tr><td>2014-11-21</td><td>chromium</td><td><a href='https://codereview.chromium.org/723223004'>Using FLAG_ACTIVITY_NEW_TASK flag for sharing in Chrome Shell.</a></td><td>deepak.db</td></tr>
+<tr><td>2014-11-21</td><td>chromium</td><td><a href='https://codereview.chromium.org/737353003'>Fix WeakPtrFactory member ordering in content</a></td><td>mohan.reddy</td></tr>
+<tr><td>2014-11-21</td><td>chromium</td><td><a href='https://codereview.chromium.org/738313003'>Fix WeakPtrFactory member ordering in components</a></td><td>mohan.reddy</td></tr>
+<tr><td>2014-11-21</td><td>chromium</td><td><a href='https://codereview.chromium.org/738693002'>Opening new "about:blank" tab if all tabs are closed in tab switcher mode.</a></td><td>divya.bansal</td></tr>
+<tr><td>2014-11-21</td><td>chromium</td><td><a href='https://codereview.chromium.org/727443002'>[content/common] Convert VLOGs to DVLOGs</a></td><td>anujk.sharma</td></tr>
+<tr><td>2014-11-20</td><td>chromium</td><td><a href='https://codereview.chromium.org/727533004'>Keyboard shortcut for 'Back','Forward' and 'Save page' are not present.</a></td><td>deepak.m1</td></tr>
+<tr><td>2014-11-20</td><td>chromium</td><td><a href='https://codereview.chromium.org/736233003'>TODO(miu): Rename to receiver_ssrc</a></td><td>anujk.sharma</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/692643005'>ARIA state/property(aria-relevant,aria-busy) are not exposed correctly on MAC.</a></td><td>shreeram.k</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/718043007'>PasswordManager should not check the landing page for login form repetition for non-HTML forms</a></td><td>sunil.ratnu</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/726703006'>Add a note in other.html for not merging it with done.html</a></td><td>sunil.ratnu</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/731293004'>Add command line and flag option to force 2D canvas to use display lists</a></td><td>p.sergey</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/375253002'>Support NumCopies print preset</a></td><td>n.bansal</td></tr>
+<tr><td>2014-11-19</td><td>chromium</td><td><a href='https://codereview.chromium.org/733953002'>Do not save passwords if the landing page has HTTP status 5xx or 4xx</a></td><td>sunil.ratnu</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/739513003'>Accelerator Key's in the Omnibox's context menu are not visible.</a></td><td>deepak.m1</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/730083002'>[media/audio] Convert VLOGs to DVLOGs</a></td><td>anujk.sharma</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/735053002'>Prefix CommandLine usage with base namespace (Part 7: cloud_print/)</a></td><td>pgal.u-szeged</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/726853003'>Adding Accelerator key for 'Reload' and 'View Source'.</a></td><td>deepak.m1</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/723083002'>Temporarily disabling AX tests for input-types.html and output.html</a></td><td>shreeram.k</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/712313003'>Exposing AXRole* correctly for HTML input types on mac.</a></td><td>shreeram.k</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/722663002'>HTML math tag should have AXRoleDescription as 'math'</a></td><td>shreeram.k</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/732983005'>Prefix CommandLine usege with base namespace (Part 5: cc/)</a></td><td>pgal.u-szeged</td></tr>
+<tr><td>2014-11-18</td><td>chromium</td><td><a href='https://codereview.chromium.org/719453007'>Make Keyframe use TimeTicks/TimeDelta to represent time instead of double.</a></td><td>behara.ms</td></tr>
+<tr><td>2014-11-17</td><td>chromium</td><td><a href='https://codereview.chromium.org/692343003'>dmprof expand command supports to analyze multiple components with same name in different allocators</a></td><td>wensheng.he</td></tr>
+<tr><td>2014-11-17</td><td>chromium</td><td><a href='https://codereview.chromium.org/713883002'>Update AX TC results for figcaption</a></td><td>je_julie.kim</td></tr>
+<tr><td>2014-11-16</td><td>chromium</td><td><a href='https://codereview.chromium.org/732433002'>Add some modifiers to eventSender for test.</a></td><td>jinho.bang</td></tr>
+<tr><td>2014-11-14</td><td>chromium</td><td><a href='https://codereview.chromium.org/593503003'>Support error handling for Surface read-backs.</a></td><td>siva.gunturi</td></tr>
+<tr><td>2014-11-14</td><td>chromium</td><td><a href='https://codereview.chromium.org/724683002'>Keyboard should not be displayed in tab switcher mode.</a></td><td>divya.bansal</td></tr>
 <tr><td>2014-11-13</td><td>chromium</td><td><a href='https://codereview.chromium.org/563523002'>cc: Change LayerTreeHost unit tests to use impl painting.</a></td><td>sohan.jyoti</td></tr>
 <tr><td>2014-11-13</td><td>chromium</td><td><a href='https://codereview.chromium.org/715273002'>[content/gpu] Convert VLOGs to DVLOGs</a></td><td>anujk.sharma</td></tr>
 <tr><td>2014-11-13</td><td>chromium</td><td><a href='https://codereview.chromium.org/649543002'>TODO(sergeyu): Replace with MEDIA_DESKTOP_AUDIO_CAPTURE.</a></td><td>anujk.sharma</td></tr>
