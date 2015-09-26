@@ -1,0 +1,14 @@
+
+<script>
+$(document).ready(function() {
+  $('#issuestable').dataTable( {
+    "dom": 'C<"clear">lfrtip',
+    "stateSave": true, 
+    "stateDuration": 60 * 60 * 24 * 30,
+    "order": [ 0, 'desc' ],
+    "lengthMenu": [[15, 25, 50, -1], [15, 25, 50, "All"]],
+    "columnDefs": [ { "searchable": false, "targets": 0 } ],
+  } );
+} );
+</script>
+</body>
