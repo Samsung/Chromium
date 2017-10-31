@@ -132,7 +132,11 @@ def SpecifyContribution(data, colname, day_start=None, day_end=None, max_names=5
 
 def SaveModuleDistribution(dataurl, saveimgname=None):
     data = ConvertPage(dataurl)
-    data = data[np.logical_or(data['Module'] == 'blink', data['Module'] == 'chromium')]
+#    data = data[np.logical_or(data['Module'] == 'blink', data['Module'] == 'chromium')]
+    
+    for i in data['Module']:
+         data['Module'] = 'Chromium Commits'
+             
     if saveimgname == None:
         saveimgname = filter(str.isdigit,np.datetime_as_string(np.datetime64(datetime.datetime.now()))) + '.png'
     SpecifyContribution(data, 'Module', day_start=np.datetime64('2013-04-01'), plot=False, saveplot=saveimgname)
