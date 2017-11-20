@@ -80,7 +80,7 @@ def SpecifyContribution(data, colname, day_start=None, day_end=None, max_names=5
         day_end = np.datetime64(datetime.datetime.now()).astype('datetime64[D]')
     
     # data get sorted by date, thus count goes up with time
-    data = data.sort('Days_since',ascending=False)
+    data = data.sort_values('Days_since',ascending=False)
     data = data.groupby(colname).apply(lambda x:CountContribution(x, colname=colname))
     
     # get the largest contributors who will appear in our plot
