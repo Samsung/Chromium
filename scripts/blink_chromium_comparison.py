@@ -95,7 +95,6 @@ def SpecifyContribution(data,
         day_end = day_end.astype('datetime64[D]')
         data = data[data['Modified'] <= day_end]
     else:
-        # day_end = data['Modified'].values.max().astype('datetime64[D]')
         day_end = np.datetime64(datetime.datetime.now()).astype('datetime64[D]')
 
     # data get sorted by date, thus count goes up with time
@@ -127,67 +126,26 @@ def SpecifyContribution(data,
                 label=name,
                 linewidth=2)
         ax.grid(True)
+
         # add the legend
-        #         ax.legend(bbox_to_anchor=(1.05, 1), loc=1)
         ax.legend(loc='upper left', fontsize=20)
 
-        # get a decent axis ticks and ticklabels
-        if (day_end - day_start) / np.timedelta64(1, 'D') <= 100:
-            xticks = [
-                str(year) + month + day
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1) for month in [
-                        '-01', '-02', '-03', '-04', '-05', '-06', '-07', '-08',
-                        '-09', '-10', '-11', '-12'
-                    ] for day in ['-01', '-11', '-21']
-            ]
-            xticklabels = [
-                day + ('\n' + month + ('\n' + str(year)) * (month == 'Jan.')) *
-                (day == '01')
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1) for month in [
-                        'Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'July',
-                        'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'
-                    ] for day in '01', ' 11', ' 21'
-            ]
-        elif (day_end - day_start) / np.timedelta64(1, 'D') <= 300:
-            xticks = [
-                str(year) + month + day
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1) for month in [
-                        '-01', '-02', '-03', '-04', '-05', '-06', '-07', '-08',
-                        '-09', '-10', '-11', '-12'
-                    ] for day in ['-01']
-            ]
-            xticklabels = [
-                month + ('\n' + str(year)) * (month == 'Jan.')
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1)
-                for month in [
-                    'Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'July',
-                    'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'
-                ]
-            ]
-        else:
-            xticks = [
-                str(year) + month + day
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1)
-                for month in ['-01', '-04', '-07', '-10'] for day in ['-01']
-            ]
-            xticklabels = [
-                month + ('\n' + str(year)) *
-                (month == 'Jan.' or (month == 'Apr.' and year == 2013))
-                for year in np.arange(
-                    day_start.astype(object).year,
-                    day_end.astype(object).year + 1)
-                for month in ['Jan.', 'Apr.', 'July', 'Oct.']
-            ]
+        # axis ticks and ticklabels
+        xticks = [
+            str(year) + month + day
+            for year in np.arange(
+                day_start.astype(object).year,
+                day_end.astype(object).year + 1)
+            for month in ['-01', '-04', '-07', '-10'] for day in ['-01']
+        ]
+        xticklabels = [
+            month + ('\n' + str(year)) *
+            int(month == 'Jan.' or (month == 'Apr.' and year == 2013))
+            for year in np.arange(
+                day_start.astype(object).year,
+                day_end.astype(object).year + 1)
+            for month in ['Jan.', 'Apr.', 'July', 'Oct.']
+        ]
 
         # add those labels
         ax.tick_params(axis='both', labelsize=20)
@@ -228,8 +186,8 @@ def SaveModuleDistribution(dataurl, saveimgname=None):
 if __name__ == '__main__':
 
     # the html file
-    #dataurl = 'http://samsung.github.io/Chromium/commits.html'
     dataurl = 'file:commits.html'
+
     # the target place
     saveimgname = 'samsung_chromium_contributions.png'
 
