@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="128" height="128" viewBox="0 0 128.00 128.00" enable-background="new 0 0 128.00 128.00" xml:space="preserve">
+	<g>
+		<ellipse fill="#FFFFFF" fill-opacity="0.701961" stroke-width="0.2" stroke-linejoin="round" cx="58.3979" cy="59.9907" rx="10.7479" ry="10.7479"/>
+		<path fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 43.8603,85.7621C 47.1636,87.6543 50.6804,88.8331 54.2325,89.347L 64.3385,71.7048C 54.2533,76.1939 48.2964,68.5412 48.2964,68.5412L 34.054,43.9975C 33.6812,44.5563 33.3249,45.1316 32.986,45.7231C 24.9324,59.7824 29.801,77.7085 43.8603,85.7621 Z "/>
+		<rect x="68.2282" y="43.0009" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="30.4614" height="4.4469"/>
+		<rect x="68.2282" y="92.2923" fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="30.4614" height="4.4469"/>
+		<path fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 43.5122,34.786C 40.2084,36.6775 37.4119,39.114 35.171,41.9176L 45.2727,59.5622C 46.5048,48.5921 56.1198,47.3272 56.1198,47.3272L 66.563,47.3777L 66.563,41.965L 81.0387,41.965C 72.1754,30.8095 56.2568,27.4896 43.5122,34.786 Z "/>
+		<path fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 85.691,49.2091L 72.8766,49.2091L 72.8873,49.2271L 85.691,49.2091 Z "/>
+		<path fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 69.6859,87.0783L 79.8245,69.2277L 67.9539,49.2091L 65.3593,49.2091C 74.2675,55.7288 70.588,64.7014 70.588,64.7014L 56.3703,89.2594L 58.3985,89.3284C 62.3984,89.3284 66.2113,88.5279 69.6859,87.0783 Z "/>
+		<path fill="#FFFFFF" fill-opacity="0.701961" stroke-width="0.2" stroke-linejoin="round" d="M 87.6628,66.7171L 97.7607,49.2271L 86.3998,49.2271L 73.5889,49.2272L 70.5603,49.2272L 82.4381,69.8001L 70.5604,90.3728L 97.7607,90.3728L 86.4138,70.7195L 85.8829,69.7999L 87.6628,66.7171 Z M 76.6153,84.2061L 91.7695,84.1938L 93.7805,87.7998L 74.5404,87.7998L 76.6153,84.2061 Z M 80.2303,61.4969L 88.0905,61.4969L 84.1604,68.3041L 80.2303,61.4969 Z "/>
+	</g>
+</svg>
