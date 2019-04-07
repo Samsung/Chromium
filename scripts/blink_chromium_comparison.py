@@ -84,7 +84,7 @@ def SpecifyContribution(data,
     # np.datetime64 variables for date and time
     data['Modified'] = np.array(data['Modified'].values, dtype=np.datetime64)
 
-    # setting the target time period
+   # setting the target time period
     if day_start is None:
         day_start = data['Modified'].values.min()
     day_start = day_start.astype('datetime64[D]')
@@ -144,7 +144,7 @@ def SpecifyContribution(data,
             for year in np.arange(
                 day_start.astype(object).year,
                 day_end.astype(object).year + 1)
-            for month in ['Jan.', '', '', '']
+            for month in ['Jan.', 'a', 'b', 'c']
         ]
 
         # add those labels
