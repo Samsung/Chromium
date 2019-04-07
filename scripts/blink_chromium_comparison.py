@@ -144,7 +144,7 @@ def SpecifyContribution(data,
             for year in np.arange(
                 day_start.astype(object).year,
                 day_end.astype(object).year + 1)
-            for month in ['Jan', ' ', ' ', ' ']
+            for month in ['Jan', 'Apr', 'Jul', 'Oct']
         ]
 
         # add those labels
@@ -168,7 +168,7 @@ def SaveModuleDistribution(dataurl, saveimgname=None):
     #    data = data[np.logical_or(data['Module'] == 'blink', data['Module'] == 'chromium')]
 
     for i in data['Module']:
-        data['Module'] = 'Chromium Commits'
+        data['Module'] = 'Number of Chromium Commits from Samsung'
 
     if saveimgname == None:
         saveimgname = filter(str.isdigit,
