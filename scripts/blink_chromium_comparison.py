@@ -125,7 +125,7 @@ def SpecifyContribution(data,
                 np.concatenate((data_to_plot[:, 1], [0])),
                 label=name,
                 linewidth=2)
-        ax.grid(True)
+   #     ax.grid(True)
 
         # add the legend
         ax.legend(loc='upper left', fontsize=20)
