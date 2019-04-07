@@ -139,8 +139,8 @@ def SpecifyContribution(data,
             for month in ['-01', '-04', '-07', '-10'] for day in ['-01']
         ]
         xticklabels = [
-            month + ('\n' + str(year)) *
-            int(month == 'Jan.' or (month == 'Apr.' and year == 2013))
+            ('\n' + str(year)) *
+            int(month == 'Jan' or (month == 'Apr' and year == 2013))
             for year in np.arange(
                 day_start.astype(object).year,
                 day_end.astype(object).year + 1)
