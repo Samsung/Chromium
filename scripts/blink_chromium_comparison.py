@@ -144,7 +144,7 @@ def SpecifyContribution(data,
             for year in np.arange(
                 day_start.astype(object).year,
                 day_end.astype(object).year + 1)
-#            for month in ['Jan.', 'Apr.', 'July', 'Oct.']
+            for month in ['Jan.', '', '', '']
         ]
 
         # add those labels
