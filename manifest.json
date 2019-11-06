@@ -1,0 +1,18 @@
+{
+    "short_name": "Samsung Chromium commits",
+    "name": "Samsung Chromium commits",
+    "start_url": "/Chromium/",
+    "scope" : "/Chromium/",
+    "description" : "Samsung's Contributions to the Chromium Open Source Project",
+    "background_color": "#4373D9",
+    "theme_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

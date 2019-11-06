@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.png">
     <meta name="description" content="Samsung's Contributions to the Chromium Open Source Project">
     <meta name="theme-color" content="#FFFFFF">
+    <link rel="manifest" href="manifest.json">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="f/fonts.css">
     <title>Samsung's Contributions to the Chromium Open Source Project</title>
@@ -60,7 +61,22 @@
     </div>
     <footer>&copy; Copyright Samsung 2019</footer>
 
-    
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+                .register('service-worker.js')
+                .then(function(sw) {
+                    console.log('Service Worker Registered');
+                }).catch(function(error) {
+                  console.warn("Service Worker failed to register: " + error );
+                });
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+              for(let registration of registrations) {
+                registration.unregister()
+              }
+            });
+        }
+    </script>
     
 </body>
 </html>
