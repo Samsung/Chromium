@@ -41,7 +41,7 @@ class Repo(object):
                     '--date=short',
                     '--grep='+author if use_grep else '--author='+author,
                     '-z',
-                    'master']).split('\0')
+                    'main']).split('\0')
         return lines
 
 class Commit(object):
