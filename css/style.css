@@ -38,12 +38,13 @@ header{
     background-color: rgba(0,0,0,.1);
     padding: 1em;
     border: solid 1px  rgba(255,255,255,.2) ;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 .main-option:hover{
     background-color: rgba(0,0,0,.2);
     border: solid 1px  rgba(255,255,255,.4) ;
-    transition-duration: 500ms;
 }
 
 .image-icon{
